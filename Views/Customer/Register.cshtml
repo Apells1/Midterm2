@@ -1,0 +1,24 @@
+@using Northwind.Models
+@model Northwind.Models.Customer
+
+<h1>Customer Creator</h1>
+
+<form method="post" asp-action="AddCustomer">
+    <label asp-for="@Model.CompanyName">Company Name:</label><br>
+    <input asp-for="@Model.CompanyName"><br>
+    <label asp-for="@Model.Address">Address:</label><br>
+    <input asp-for="@Model.Address"><br>
+    <label asp-for="@Model.City">City:</label><br>
+    <input asp-for="@Model.City"><br>
+    <label asp-for="@Model.Region">Region:</label><br>
+    <input asp-for="@Model.Region"><br>
+    <label asp-for="@Model.PostalCode">Postal Code:</label><br>
+    <input asp-for="@Model.PostalCode"><br>
+    <label asp-for="@Model.Country">Country:</label><br>
+    <input asp-for="@Model.Country"><br>
+    <label asp-for="@Model.Phone">Phone:</label><br>
+    <input asp-for="@Model.Phone"><br>
+    <label asp-for="@Model.Fax">Fax:</label><br>
+    <input asp-for="@Model.Fax"><br>
+    <button type="submit" id="submit">Submit</button>
+</form>
